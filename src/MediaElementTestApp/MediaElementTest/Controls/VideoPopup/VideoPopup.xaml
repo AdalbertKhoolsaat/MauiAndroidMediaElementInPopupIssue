@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    x:Class="MediaElementTest.Controls.VideoPopup"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:vm="clr-namespace:MediaElementTest.Controls"
+    x:Name="this"
+    x:DataType="vm:VideoPopupVM"
+    x:TypeArguments="x:String">
+    <VerticalStackLayout x:Name="rootLayout">
+        <toolkit:MediaElement
+            x:Name="mediaElement"
+            Aspect="AspectFit"
+            HeightRequest="180"
+            ShouldAutoPlay="True"
+            ShouldShowPlaybackControls="True"
+            Source="{Binding VideoSource}" />
+    </VerticalStackLayout>
+</toolkit:Popup>

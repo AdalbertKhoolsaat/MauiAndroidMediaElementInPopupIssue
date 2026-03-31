@@ -26,12 +26,13 @@
                 Style="{StaticResource SubHeadline}"
                 Text="Welcome to &#10;.NET Multi-platform App UI" />
 
-            <!--  Watch Trailer  -->
+            <!--  Watch Video Inside Popup  -->
             <Button
                 Command="{Binding StartVideoPlaybackCommand}"
                 IsVisible="{Binding VideoSource, Converter={toolkit:IsStringNotNullOrEmptyConverter}}"
-                Text="▶ Watch Trailer" />
+                Text="▶ Open Video Popup" />
 
+            <!--  Watch Video  -->
             <toolkit:MediaElement
                 Aspect="AspectFit"
                 HeightRequest="180"

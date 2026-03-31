@@ -6,8 +6,7 @@
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     xmlns:vm="clr-namespace:MediaElementTest.Controls"
     x:Name="this"
-    x:DataType="vm:VideoPopupVM"
-    x:TypeArguments="x:String">
+    x:DataType="vm:VideoPopupVM">
     <VerticalStackLayout x:Name="rootLayout">
         <ImageButton
             Background="Transparent"

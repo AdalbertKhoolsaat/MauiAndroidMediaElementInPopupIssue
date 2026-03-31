@@ -9,6 +9,14 @@
     x:DataType="vm:VideoPopupVM"
     x:TypeArguments="x:String">
     <VerticalStackLayout x:Name="rootLayout">
+        <ImageButton
+            Background="Transparent"
+            Command="{Binding CloseCommand}"
+            HorizontalOptions="End">
+            <ImageButton.Source>
+                <FontImageSource Glyph="✖" Color="Black" />
+            </ImageButton.Source>
+        </ImageButton>
         <toolkit:MediaElement
             x:Name="mediaElement"
             Aspect="AspectFit"
